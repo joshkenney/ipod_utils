@@ -544,3 +544,136 @@ welcome to redistribute it under certain conditions.  Type `flac' for details.
 
 05. Pinback - Water Run.flac: ERROR during decoding
                               state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - Avignon.flac: *** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - Avignon.flac: ERROR during decoding
+                            state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - Fortress (Live Band Version).flac: 78% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - Fortress (Live Band Version).flac: ERROR during decoding
+                                                 state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - Loro.flac: 89% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - Loro.flac: ERROR during decoding
+                         state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - Subbing for Eden.flac: 87% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - Subbing for Eden.flac: ERROR during decoding
+                                     state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - Talby.flac: 83% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - Talby.flac: ERROR during decoding
+                          state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+06. Pinback - This Red Book.flac: 79% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+06. Pinback - This Red Book.flac: ERROR during decoding
+                                  state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - Boo.flac: 57% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - Boo.flac: ERROR during decoding
+                        state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - Crutch.flac: 70% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - Crutch.flac: ERROR during decoding
+                           state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - Devil You Know.flac: 79% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - Devil You Know.flac: ERROR during decoding
+                                   state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - Seville (demo).flac: *** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - Seville (demo).flac: ERROR during decoding
+                                   state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - Soaked.flac: 72% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - Soaked.flac: ERROR during decoding
+                           state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+07. Pinback - X I Y.flac: 85% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+07. Pinback - X I Y.flac: ERROR during decoding
+                          state = FLAC__STREAM_DECODER_END_OF_STREAM
+File '/Users/Joshua/Downloads/gaines_converted_wma/01 3.m4a' already exists. Overwrite? [y/N] 

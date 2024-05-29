@@ -69,12 +69,12 @@ convert_audio() {
     wma)
       echo "Converting WMA to AAC: $file"
       # Convert WMA directly to AAC within M4A container using ffmpeg
-      if ffmpeg -i "$file" -acodec aac "$target_file" 2>&1; then
+      if ffmpeg -i "$file" -vn -acodec aac -b:a 192k "$target_file" 2>&1; then
         echo "Successfully converted WMA: $file"
       else
         echo "Failed to convert WMA: $file"
         # Log error details for later review
-        ffmpeg -v error -i "$file" -acodec aac "$target_file" 2>> error_log.txt
+        ffmpeg -v error -i "$file" -vn -acodec aac -b:a 192k "$target_file" 2>> error_log.txt
       fi
       ;;
     *)
