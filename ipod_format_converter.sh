@@ -8,6 +8,16 @@ convert_audio() {
   local ext="${file##*.}"
   local target_file="$out_dir/${base_name}.$type"
 
+  # Check for non-standard ID3 tags and remove them if found
+  if [[ "$ext" == "flac" ]]; then
+    local has_id3=$(ffprobe -v error -show_entries format_tags=ID3v1,ID3v2 -of default=noprint_wrappers=1:nokey=1 "$file")
+    if [[ -n "$has_id3" ]]; then
+      echo "ID3 tags found in $file, removing..."
+      ffmpeg -i "$file" -map_metadata -1 -acodec copy "${file}.temp"
+      mv "${file}.temp" "$file"
+    fi
+  fi
+
   case "$ext" in
     flac)
       echo "Converting FLAC to $type: $file"
