@@ -1,0 +1,88 @@
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - From Nothing to Nowhere.flac: 89% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - From Nothing to Nowhere.flac: ERROR during decoding
+                                            state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - I'm A Pretty Lady.flac: 79% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - I'm A Pretty Lady.flac: ERROR during decoding
+                                      state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Messenger.flac: 80% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Messenger.flac: ERROR during decoding
+                              state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Microtonic Wave.flac: 60% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Microtonic Wave.flac: ERROR during decoding
+                                    state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Non Photo-Blue.flac: 83% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Non Photo-Blue.flac: ERROR during decoding
+                                   state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Photograph Taken.flac: 79% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Photograph Taken.flac: ERROR during decoding
+                                     state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Some Voices.flac: 92% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Some Voices.flac: ERROR during decoding
+                                state = FLAC__STREAM_DECODER_END_OF_STREAM
+
+flac 1.4.3
+Copyright (C) 2000-2009  Josh Coalson, 2011-2023  Xiph.Org Foundation
+flac comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are
+welcome to redistribute it under certain conditions.  Type `flac' for details.
+
+01. Pinback - Tripoli.flac: 65% complete*** Got error code 0:FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+
+
+01. Pinback - Tripoli.flac: ERROR during decoding
+                            state = FLAC__STREAM_DECODER_END_OF_STREAM

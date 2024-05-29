@@ -11,41 +11,60 @@ convert_audio() {
   case "$ext" in
     flac)
       echo "Converting FLAC to $type: $file"
-      if [ "$type" == "aiff" ]; then
-        # Convert FLAC to AIFF directly
-        if flac -s -d --force-aiff-format -o "$target_file" "$file"; then
+      if [[ "$type" == "aiff" ]]; then
+        # Convert FLAC to AIFF using ffmpeg
+        if ffmpeg -i "$file" -acodec pcm_s16be "$target_file" 2>&1; then
           echo "Successfully converted FLAC to AIFF: $file"
         else
           echo "Failed to convert FLAC: $file"
+          # Log error details for later review
+          ffmpeg -v error -i "$file" -acodec pcm_s16be "$target_file" 2>> error_log.txt
         fi
       else
         # Convert FLAC to ALAC
         local aiff="$out_dir/${base_name}.aiff"
-        if flac -s -d --force-aiff-format -o "$aiff" "$file" && afconvert -f m4af -d alac "$aiff" "$target_file"; then
+        if flac -d -o "$aiff" "$file" && afconvert -f m4af -d alac "$aiff" "$target_file"; then
           echo "Successfully converted FLAC to ALAC: $file"
           rm "$aiff"
         else
           echo "Failed to convert FLAC: $file"
           rm -f "$aiff"
+          # Log error details for later review
+          flac -d -o "$aiff" "$file" 2>> error_log.txt
         fi
       fi
       ;;
     wav)
-      echo "Converting WAV to ALAC: $file"
-      # Convert WAV directly to ALAC within M4A container
-      if afconvert -f m4af -d alac "$file" "$target_file"; then
-        echo "Successfully converted WAV: $file"
+      echo "Converting WAV to $type: $file"
+      if [[ "$type" == "aiff" ]]; then
+        # Convert WAV to AIFF using ffmpeg
+        if ffmpeg -i "$file" -acodec pcm_s16be "$target_file" 2>&1; then
+          echo "Successfully converted WAV to AIFF: $file"
+        else
+          echo "Failed to convert WAV: $file"
+          # Log error details for later review
+          ffmpeg -v error -i "$file" -acodec pcm_s16be "$target_file" 2>> error_log.txt
+        fi
       else
-        echo "Failed to convert WAV: $file"
+        # Convert WAV directly to ALAC within M4A container
+        if afconvert -f m4af -d alac "$file" "$target_file"; then
+          echo "Successfully converted WAV: $file"
+        else
+          echo "Failed to convert WAV: $file"
+          # Log error details for later review
+          afconvert -v error -f m4af -d alac "$file" "$target_file" 2>> error_log.txt
+        fi
       fi
       ;;
     wma)
       echo "Converting WMA to AAC: $file"
       # Convert WMA directly to AAC within M4A container using ffmpeg
-      if ffmpeg -i "$file" -acodec aac "$target_file"; then
+      if ffmpeg -i "$file" -acodec aac "$target_file" 2>&1; then
         echo "Successfully converted WMA: $file"
       else
         echo "Failed to convert WMA: $file"
+        # Log error details for later review
+        ffmpeg -v error -i "$file" -acodec aac "$target_file" 2>> error_log.txt
       fi
       ;;
     *)
@@ -54,38 +73,29 @@ convert_audio() {
   esac
 }
 
-TEMP=$(getopt -o t: --long type: -n 'ipod_format_converter.sh' -- "$@")
-
-if [ $? != 0 ]; then
-  echo "Terminating..." >&2
-  exit 1
-fi
-
-# Note the quotes around '$TEMP': they are essential!
-eval set -- "$TEMP"
-
-type="m4a"  # default type ALAC (m4a)
-while true; do
-  case "$1" in
-    -t | --type )
-      type="$2"
-      shift 2
+type="m4a"  # default type is ALAC (m4a)
+while getopts ":t:" opt; do
+  case ${opt} in
+    t )
+      type=$OPTARG
       [[ "$type" == "m4a" || "$type" == "aiff" ]] || { echo "Invalid type: $type"; exit 1; }
       ;;
-    -- )
-      shift
-      break
+    \? )
+      echo "Invalid option: $OPTARG" 1>&2
+      exit 1
       ;;
-    * )
-      break
+    : )
+      echo "Invalid option: $OPTARG requires an argument" 1>&2
+      exit 1
       ;;
   esac
 done
+shift $((OPTIND -1))
 
 if [ $# -ne 2 ]; then
-  echo "Usage: $0 [-t|--type type] <source_dir> <output_dir>"
+  echo "Usage: $0 [-t type] <source_dir> <output_dir>"
   echo "Options:"
-  echo "  -t, --type  Specify output type for FLAC files (m4a or aiff). Default is m4a."
+  echo "  -t  Specify output type for FLAC files (m4a or aiff). Default is m4a."
   echo "Requirements: Mac OS, flac, afconvert, and ffmpeg installed"
   exit 1
 fi
